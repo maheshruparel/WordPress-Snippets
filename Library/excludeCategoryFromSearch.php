@@ -1,7 +1,7 @@
 <?php 
 function exclude_category_from_search($query) {
     if ($query->is_search) {
-		if(isset($_COOKIE['yourEdition']) || $_REQUEST["ViewEdition"]){
+	if(isset($_COOKIE['yourEdition']) || $_REQUEST["ViewEdition"]){
             if($_COOKIE['yourEdition']=="US" || $_REQUEST["ViewEdition"]=="US"){
                 // $query->set('cat', '-158');
                 // $query->set('cat', '+157');
