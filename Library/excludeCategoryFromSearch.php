@@ -1,3 +1,4 @@
+<?php 
 function exclude_category_from_search($query) {
     if ($query->is_search) {
 		if(isset($_COOKIE['yourEdition']) || $_REQUEST["ViewEdition"]){
